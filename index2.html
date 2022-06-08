@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="utf-8">
+	<title>Team Fortress 2 #savetf2</title>
+
+	<link rel="stylesheet" type="text/css" href="Style.css">
+<script>
+      var photoCount = 4;
+      //змінна кількість фотуів , які треба перегорнути
+      var currentPhotoIndex = 1;
+      //змінна яка містить індекч поточного номера фото 
+      function showNextPhoto(){
+      //створюємо функцію для гортання фото
+        currentPhotoIndex++;
+        //додаємо 1 до поточного зміної із номером фото
+        if (currentPhotoIndex > photoCount) currentPhotoIndex = 1;
+        //умова , що дозволяє по колу перемикати фото від 1 до 5 влючно, а потім знаву від 1 до 5 включно
+        var elementPhoto = document.getElementById("currentPhoto");
+        //помістити у змінні витягнути елемент
+        elementPhoto.src ="images2/photo" + currentPhotoIndex + ".png";//заміни номер у назві фото на поточний
+      }
+</script>
+</head>
+<body>
+
+
+	<header>
+	<h1>Team Fortress 2 #savetf2</h1>
+      <nav class=".nav">
+  <ul>
+  <li><a href="#">page</a></li>
+  <li><a href="#">heavy in Halloween</a>
+  <ul>
+    <li><a href="index.html">Grand Duchess</a></li>
+    <li><a href="index2.html">Monster Mash-Up Pack</a></li>
+  </ul>
+</li>
+  <li><a href="#">more</a></li>
+  <li><a href="#">comic</a></li>
+  </ul>
+</nav>
+	</header> 
+   <main>
+
+
+<article>
+      <h2>history</h2>
+<hr>
+      <p>Equipping all items in the set enables additional voice responses.
+
+</p>
+       <p>This set includes Halloween-restricted items and can only be worn around Halloween or during a Full Moon; at other times of the year, it does not appear in gameplay or grant its effect, unless the server has Halloween mode enabled. However, it can be equipped at any time and can still be viewed on the loadout screen even when it is not visible during games.
+
+The Grand Duchess was contributed to the Steam Workshop.</p>
+        
+ </article>
+<hr>
+<p></p>
+      </article>
+      <aside>
+
+      <section>
+
+     <h2>Grand Duchess
+</h2>
+<hr>
+
+      <p>Photo The Grand Duchess</p>
+<div id="1">
+    <img id="currentPhoto" src="images2/photo1.png" />
+  </div>
+  <button onclick="showNextPhoto()">next photo</button>
+     
+      </section>
+
+      </aside>
+     </main>
+     <main> 
+      <article>
+          <p>Raaaaah!
+        <iframe width="260" height="60" src="https://wiki.teamfortress.com/w/images/d/df/Heavy_battlecry03.wav" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></p>
+       </iframe>  
+ </article>
+</main>
+
+     <footer> 
+      <p>Copyright © 2022 Adobe. All rights reserved.
+</p>
+
+     
+
+      </footer> 
+
+      
+
+</body>
+</html>
